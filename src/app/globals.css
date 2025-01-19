@@ -3,19 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #5865F2; /* Example background color */
+  --foreground: #ffffff; /* Example foreground color */
+  --primary: #060B27;    /* Example primary color */
+  --secondary: #000000;  /* Example secondary color */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary);
+  background: var(--foreground);
+  font-family: 'Satoshi', 'Inter', 'Arial', 'sans-serif';
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/src/assets/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/src/assets/fonts/Satoshi-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/src/assets/fonts/Inter_24pt-Regular.ttf') format('truetype');
 }
