@@ -1,9 +1,9 @@
-'use client'
-import Image from "next/image";
-import * as React from "react"
-import Link from "next/link"
- 
-import { cn } from "@/lib/utils"
+'use client';
+import Image from 'next/image';
+import * as React from 'react';
+import { useState } from 'react';
+
+import { cn } from '@/lib/utils';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,102 +11,127 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import Button from "./Button";
-
+} from '@/components/ui/navigation-menu';
+import Button from './Button';
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const components:{title: string, description: string}[] = [{
-    title: 'CV Builder',
-    description: 'Craft the perfect CV with our intuitive builder designed to showcase your skills and experience',
-  },{
-    title: 'Assessment Practice',
-    description: 'Prepare for aptitude tests and interviews with practice materials that boost your confidence',
-  },
-  {
-    title: 'Interview Tips',
-    description: 'Master your interviews with expert advice, sample questions, and proven techniques',
-  },{
-    title: 'Focus Time Scheduler',
-    description: 'Stay productive by scheduling dedicated blocks of time to work on your applications',
-  },
-  {
-    title: 'Networking Events',
-    description: 'Connect with employers, apprentices, and mentors at exclusive events designed to grow your opportunities.',
-  }]
+  const components = [
+    {
+      title: 'CV Builder',
+      description:
+        'Craft the perfect CV with our intuitive builder designed to showcase your skills and experience',
+    },
+    {
+      title: 'Assessment Practice',
+      description:
+        'Prepare for aptitude tests and interviews with practice materials that boost your confidence',
+    },
+    {
+      title: 'Interview Tips',
+      description:
+        'Master your interviews with expert advice, sample questions, and proven techniques',
+    },
+    {
+      title: 'Focus Time Scheduler',
+      description:
+        'Stay productive by scheduling dedicated blocks of time to work on your applications',
+    },
+  ];
 
-  const components2:{title: string, description: string}[] = [{
-    title: 'Application Tracker',
-    description: 'Monitor all your submitted applications in one place and stay updated on their status',
-  }]
+  const components2 = [
+    {
+      title: 'Application Tracker',
+      description:
+        'Monitor all your submitted applications in one place and stay updated on their status',
+    },
+  ];
 
   return (
-    <div className="flex items-center justify-between p-4 text-primary">
-      <Image src="/logo.svg" alt="WApprentice" width={100} height={100} />
-      <NavigationMenu className="flex flex-row text-14 cursor-pointer">
-        <NavigationMenuList className="flex space-x-4">
+    <div className="flex flex-col lg:flex-row items-center justify-between p-4 text-primary cursor-pointer">
+      {/* Logo and Hamburger Icon */}
+      <div className="flex items-center justify-between w-full lg:w-auto">
+        <Image
+          src="/logo.svg"
+          alt="WApprentice"
+          width={100}
+          height={100}
+          className="max-w-[50px] h-auto lg:max-w-[100px]"
+        />
+        {/* Hamburger Icon for small devices */}
+        <button
+          className="block lg:hidden p-2 focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <div className="space-y-1">
+            <div className="h-1 w-6 bg-black"></div>
+            <div className="h-1 w-6 bg-black"></div>
+            <div className="h-1 w-6 bg-black"></div>
+          </div>
+        </button>
+      </div>
 
-          <NavigationMenuItem>
-            Home
-          </NavigationMenuItem>
-          
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Find Apprenticeships</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] ">
-                {components2.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                  >
-                    {component.description}
-                  </ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-            
-          <NavigationMenuItem>
-            Ratings & Reviews
-          </NavigationMenuItem>
+      {/* Normal Menu for Devices >= 1024px (lg) */}
+      <div
+        className={cn(
+          'w-full md:w-auto md:flex md:items-center md:justify-center',
+          menuOpen ? 'block' : 'hidden lg:block',
+          'flex items-center justify-center'
+        )}
+      >
+        <NavigationMenu className="flex flex-col items-start mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
+          <NavigationMenuList className="flex flex-col lg:flex-row w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4">
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Find Apprenticeships</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-4 sm:w-[300px] lg:w-[500px] lg:grid-cols-1 xl:w-[600px]">
+                  {components2.map((component) => (
+                    <ListItem key={component.title} title={component.title}>
+                      {component.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
 
-          <NavigationMenuItem>
-            Salary Insights
-          </NavigationMenuItem>
+            <NavigationMenuItem>
+              Ratings & Reviews
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              Salary Insights
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              Events & Networking
+            </NavigationMenuItem>
 
-          <NavigationMenuItem>
-            Events & Networking
-          </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-4 sm:w-[300px] lg:w-[500px] lg:grid-cols-2 xl:w-[600px]">
+                  {components.map((component) => (
+                    <ListItem key={component.title} title={component.title}>
+                      {component.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
 
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                {components.map((component) => (
-                  <ListItem
-                    key={component.title}
-                    title={component.title}
-                  >
-                    {component.description}
-                  </ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
-        </NavigationMenuList>
-      </NavigationMenu>
-
-      <Button type={'primary'} text='Join the Waitlist'/>
+      {/* Button (Hidden on Small Screens) */}
+      <div className="hidden lg:block">
+        <Button type="primary" text="Join the Waitlist" />
+      </div>
     </div>
   );
 }
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
+  React.ElementRef<'a'>,
+  React.ComponentPropsWithoutRef<'a'>
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
@@ -114,7 +139,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
             className
           )}
           {...props}
@@ -126,6 +151,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = 'ListItem';
