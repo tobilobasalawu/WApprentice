@@ -175,6 +175,19 @@ export default function Header() {
               Events & Networking
             </NavigationMenuItem>
 
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-4 sm:w-[300px] lg:w-[500px] lg:grid-cols-2 xl:w-[600px]">
+                  {components.map((component) => (
+                    <ListItem key={component.title} title={component.title}>
+                      {component.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+
           </NavigationMenuList>
         </NavigationMenu>
       </div>
