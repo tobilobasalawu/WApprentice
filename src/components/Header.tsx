@@ -133,7 +133,12 @@ export default function Header() {
         } lg:hidden w-2/5`}
       >
         <div className="flex justify-between items-center p-4 border-b">
-          <h2 className="text-lg font-semibold">Menu</h2>
+          <Image
+            src="/logo.svg"
+            alt="WApprentice"
+            width={100}
+            height={100}
+            className="max-w-[50px] h-auto lg:max-w-[100px]"/>
           <button onClick={() => setSidebarOpen(false)} className="text-gray-600">
             Close
           </button>
