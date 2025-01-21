@@ -128,15 +128,18 @@ export default function Header() {
 
       {/* Sidebar for Small Devices */}
       <div
-        className={`fixed inset-0 z-50 bg-white transition-transform transform ${
+        className={`fixed inset-0 z-50 bg-white shadow-lg transition-transform transform ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:hidden`}
       >
-        <div className="flex justify-end p-4">
-          <button onClick={() => setSidebarOpen(false)}>Close</button>
+        <div className="flex justify-between items-center p-4 border-b">
+          <h2 className="text-lg font-semibold">Menu</h2>
+          <button onClick={() => setSidebarOpen(false)} className="text-gray-600">
+            Close
+          </button>
         </div>
-        <NavigationMenu className="flex flex-col items-center mt-4">
-          <NavigationMenuList className="flex flex-col items-center w-full space-y-4">
+        <NavigationMenu className="flex flex-col items-start mt-4">
+          <NavigationMenuList className="flex flex-col items-start w-full space-y-4">
             <NavigationMenuItem>
               <NavigationMenuTrigger>Find Apprenticeships</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -149,7 +152,19 @@ export default function Header() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            {/* Other NavigationMenuItems */}
+
+            <NavigationMenuItem>
+              Ratings & Reviews
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              Salary Insights
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              Events & Networking
+            </NavigationMenuItem>
+
           </NavigationMenuList>
         </NavigationMenu>
       </div>
