@@ -135,16 +135,21 @@ export default function Header() {
       <div
         className={`fixed inset-y-0 right-0 z-50 bg-white shadow-lg transition-transform transform ${
           sidebarOpen ? 'translate-x-0' : 'translate-x-full'
-        } lg:hidden w-2/5 sm:w-[90vw]`}
+        } lg:hidden w-[90vw] sm:w-2/5`}
       >
         <div className="flex justify-between items-center p-4 border-b">
-          <h2 className="text-lg font-semibold">Menu</h2>
-          <button onClick={() => setSidebarOpen(false)} className="text-gray-600">
+          <Image
+            src="/logo.svg"
+            alt="WApprentice"
+            width={100}
+            height={100}
+            className="max-w-[50px] h-auto lg:max-w-[100px]"/>
+          <button onClick={() => setSidebarOpen(false)} className="text-#E9EDF0">
             Close
           </button>
         </div>
         <NavigationMenu className="flex flex-col items-start mt-4">
-          <NavigationMenuList className="flex flex-col items-start w-full space-y-4">
+          <NavigationMenuList className="flex flex-col items-start w-full space-y-5 pl-5">
             <NavigationMenuItem>
               <NavigationMenuTrigger>Find Apprenticeships</NavigationMenuTrigger>
               <NavigationMenuContent>
