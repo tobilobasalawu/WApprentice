@@ -16,6 +16,7 @@ import Button from './Button';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const components = [
     {
@@ -62,7 +63,7 @@ export default function Header() {
         {/* Hamburger Icon for small devices */}
         <button
           className="block lg:hidden p-2 focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setSidebarOpen(!sidebarOpen)}
         >
           <div className="space-y-1">
             <div className="h-1 w-6 bg-black"></div>
@@ -123,6 +124,34 @@ export default function Header() {
       {/* Button (Hidden on Small Screens) */}
       <div className="hidden lg:block">
         <Button type="primary" text="Join the Waitlist" />
+      </div>
+
+      {/* Sidebar for Small Devices */}
+      <div
+        className={`fixed inset-0 z-50 bg-white transition-transform transform ${
+          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        } lg:hidden`}
+      >
+        <div className="flex justify-end p-4">
+          <button onClick={() => setSidebarOpen(false)}>Close</button>
+        </div>
+        <NavigationMenu className="flex flex-col items-center mt-4">
+          <NavigationMenuList className="flex flex-col items-center w-full space-y-4">
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Find Apprenticeships</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-4">
+                  {components2.map((component) => (
+                    <ListItem key={component.title} title={component.title}>
+                      {component.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            {/* Other NavigationMenuItems */}
+          </NavigationMenuList>
+        </NavigationMenu>
       </div>
     </div>
   );
