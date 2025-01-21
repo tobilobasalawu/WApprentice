@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { /* Example background color */ /* Example foreground color */
-  --primary: #060B27;    /* Example primary color */
-  --secondary: #000000;  /* Example secondary color */
+:root {
+  --primary: #060B27;
+  --secondary: #000000;
+  --foreground: #FFFFFF;
 }
 
 body {

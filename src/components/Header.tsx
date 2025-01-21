@@ -66,7 +66,7 @@ export default function Header() {
         >
           <div className="space-y-1">
             <div className="h-1 w-6 bg-black"></div>
-            <div className="h-1 w-6 bg-black"></div>
+            <div className="h-1 w-5 bg-black"></div>
             <div className="h-1 w-6 bg-black"></div>
           </div>
         </button>
@@ -75,13 +75,12 @@ export default function Header() {
       {/* Normal Menu for Devices >= 1024px (lg) */}
       <div
         className={cn(
-          'w-full md:w-auto md:flex md:items-center md:justify-center',
-          menuOpen ? 'block' : 'hidden lg:block',
-          'flex items-center justify-center'
+          'w-full lg:w-auto lg:flex lg:items-center lg:justify-center mx-auto px-4',
+          menuOpen ? 'block' : 'hidden lg:block'
         )}
       >
-        <NavigationMenu className="flex flex-col items-start mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
-          <NavigationMenuList className="flex flex-col lg:flex-row w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4">
+        <NavigationMenu className="flex flex-col items-center mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
+          <NavigationMenuList className="flex flex-col items-center lg:flex-row w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4">
             <NavigationMenuItem>
               <NavigationMenuTrigger>Find Apprenticeships</NavigationMenuTrigger>
               <NavigationMenuContent>
