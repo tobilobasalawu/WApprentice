@@ -126,19 +126,19 @@ export default function Header() {
         <Button type="primary" text="Join the Waitlist" />
       </div>
 
+      {/* Overlay for Dimming Effect */}
+      {sidebarOpen && (
+        <div className="fixed inset-0 bg-black opacity-10 z-40" onClick={() => setSidebarOpen(false)} />
+      )}
+
       {/* Sidebar for Small Devices */}
       <div
         className={`fixed inset-y-0 right-0 z-50 bg-white shadow-lg transition-transform transform ${
           sidebarOpen ? 'translate-x-0' : 'translate-x-full'
-        } lg:hidden w-2/5`}
+        } lg:hidden w-2/5 sm:w-[90vw]`}
       >
         <div className="flex justify-between items-center p-4 border-b">
-          <Image
-            src="/logo.svg"
-            alt="WApprentice"
-            width={100}
-            height={100}
-            className="max-w-[50px] h-auto lg:max-w-[100px]"/>
+          <h2 className="text-lg font-semibold">Menu</h2>
           <button onClick={() => setSidebarOpen(false)} className="text-gray-600">
             Close
           </button>
