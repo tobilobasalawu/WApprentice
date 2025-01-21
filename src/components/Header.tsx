@@ -128,9 +128,9 @@ export default function Header() {
 
       {/* Sidebar for Small Devices */}
       <div
-        className={`fixed inset-0 z-50 bg-white shadow-lg transition-transform transform ${
-          sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } lg:hidden`}
+        className={`fixed inset-y-0 right-0 z-50 bg-white shadow-lg transition-transform transform ${
+          sidebarOpen ? 'translate-x-0' : 'translate-x-full'
+        } lg:hidden w-2/5`}
       >
         <div className="flex justify-between items-center p-4 border-b">
           <h2 className="text-lg font-semibold">Menu</h2>
