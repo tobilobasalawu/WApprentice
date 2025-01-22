@@ -55,6 +55,27 @@ body {
   border-radius: 5px;
 }
 
+.btn-special {
+  background-color: var(--special);
+  color: var(--foreground);
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 35px;
+  text-align: center;
+  height: 40px;
+  font-size: small;
+  font-family: 'Inter', 'Arial', 'sans-serif';
+}
+
+.paragraph-hero{
+  max-width: 59rem; /* 1280px */
+  text-align: center;
+  font-family: 'Inter', 'Arial', 'sans-serif'; /* Ensure you have the Inter font imported */
+  font-size: 15px;
+}
+
+
+
 @layer base {
   :root {
   --background: 0 0% 100%;
