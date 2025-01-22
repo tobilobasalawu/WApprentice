@@ -3,16 +3,21 @@ import Button from './Button';
 export default function Hero() {
   return (
     <div className="flex flex-col items-center">
-      <div className='flex space-x-1'>
-        <h1 className="text-[var(--special)] font-bold">Discover, Apply</h1>
-        <h1 className="font-bold">and</h1>
-        <h1 className="font-bold">Track</h1>
-        <h1 className="font-bold">Your Dream</h1>
-      </div>
 
-      <div className='flex space-x-1'>
-        <h1 className="font-normal">Apprenticeship with</h1>
-        <h1 className="text-blue-500 font-bold">Ease</h1>
+      <div className='flex flex-col items-center'>
+
+        <div className='flex space-x-1 mb-0'>
+          <h1 className="text-[var(--special)] font-bold" style={{ fontSize: '40px' }}>Discover, Apply</h1>
+          <h1 className="font-bold" style={{ fontSize: '40px' }}>and</h1>
+          <h1 className="font-bold" style={{ fontSize: '40px' }}>Track</h1>
+          <h1 className="font-bold" style={{ fontSize: '40px' }}>Your Dream</h1>
+        </div>
+
+        <div className='flex space-x-1 mt-[-3rem]'>
+          <h1 className="font-bold" style={{ fontSize: '40px' }}>Apprenticeship with</h1>
+          <h1 className="text-[var(--special)] font-bold" style={{ fontSize: '40px' }}>Ease</h1>
+        </div>
+
       </div>
 
       <p className="max-w-5xl text-center">
