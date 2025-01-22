@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <div className="flex flex-col items-center">
       <div className='flex space-x-1'>
-        <h1 className="text-blue-500 font-bold">Discover, Apply</h1>
-        <h1 className="font-normal">and</h1>
+        <h1 className="text-[var(--special)] font-bold">Discover, Apply</h1>
+        <h1 className="font-bold">and</h1>
         <h1 className="font-bold">Track</h1>
-        <h1 className="font-normal">Your Dream</h1>
+        <h1 className="font-bold">Your Dream</h1>
       </div>
 
       <div className='flex space-x-1'>

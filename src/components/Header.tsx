@@ -58,7 +58,7 @@ export default function Header() {
           alt="WApprentice"
           width={100}
           height={100}
-          className="max-w-[50px] h-auto lg:max-w-[100px]"
+          className="max-w-[100px] h-auto lg:max-w-[150px]"
         />
         {/* Hamburger Icon for small devices */}
         <button
