@@ -1,8 +1,9 @@
+import Input from './Input';
 import Button from './Button';
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center mt-10">
 
       <div className='flex flex-col items-center'>
 
@@ -24,7 +25,7 @@ export default function Hero() {
         Find, apply, and track apprenticeships in one click—no BS. Search by location, levels, and sector, and get the real tea on employers, salary comparisons, and CV tips. Check apprenticeship salary levels and see how they grow year by year. Stay on top with progress updates, notifications, and balance applications with your A-Levels like a boss. Enough with the struggles—forget LinkedIn oppression, rejections are nothing, and slay your career with exclusive events, insider insights, and top-secret resources.
       </p>
       
-      <Button type="secondary" text="Get Started" />
+      <Input placeholder="name@gmail.com" className="w-full mt-4" />
     </div>
   );
 }
