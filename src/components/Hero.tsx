@@ -1,5 +1,5 @@
-import Input from './Input';
 import Button from './Button';
+import { Input } from "@/components/ui/input"
 
 export default function Hero() {
   return (
@@ -21,11 +21,15 @@ export default function Hero() {
 
       </div>
 
-      <p className="max-w-5xl text-center">
+      <p className="max-w-5xl text-center font-inter">
         Find, apply, and track apprenticeships in one click—no BS. Search by location, levels, and sector, and get the real tea on employers, salary comparisons, and CV tips. Check apprenticeship salary levels and see how they grow year by year. Stay on top with progress updates, notifications, and balance applications with your A-Levels like a boss. Enough with the struggles—forget LinkedIn oppression, rejections are nothing, and slay your career with exclusive events, insider insights, and top-secret resources.
       </p>
-      
-      <Input placeholder="name@gmail.com" className="w-full mt-4" />
+
+      <div className='flex flex-col items-center justify-center'>
+        <Input placeholder="name@gmail.com" className="flex mt-5 w-[30vw] items-center" />
+        <Button type={'primary'} text={'Join Waitlist'}/>
+      </div>
+
     </div>
   );
 }
