@@ -17,8 +17,12 @@ export default function Hero() {
       </p>
 
       <div className='flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-5 mb-5 w-full'>
-        <Input placeholder="First Name" className="w-full px-4 py-3" />
-        <Input placeholder="Email Address" className="w-full px-4 py-3" />
+        <div className="w-full px-2 md:px-4 sm:px-0">
+          <Input placeholder="First Name" className="w-full px-3 py-3" />
+        </div>
+        <div className="w-full px-2 md:px-4 sm:px-0">
+          <Input placeholder="Email Address" className="w-full px-3 py-3" />
+        </div>
       </div>
 
       <Button type={'secondary'} text={'Join Waitlist'}/>
