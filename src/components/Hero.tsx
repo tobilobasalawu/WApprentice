@@ -17,9 +17,9 @@ export default function Hero() {
       </p>
 
       <div className='flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-5 mb-5 w-full'>
-        <div className="flex w-full px-2 md:px-4 sm:px-0 justify-center">
-          <Input placeholder="Email Address" className="w-1/2 px-3 py-3 rounded-full mr-5" />
-          <Button type={'secondary'} text={'Join Waitlist'} className="whitespace-nowrap" />
+        <div className="flex w-full px-2 md:px-4 sm:px-0 justify-center flex-col sm:flex-row ">
+          <Input placeholder="Email Address" className="w-full sm:w-1/2 px-3 py-3 rounded-full mr-5 mb-3" />
+          <Button type={'secondary'} text={'Join Waitlist'} className="whitespace-nowrap w-full sm:w-auto" />
         </div>
       </div>
 
