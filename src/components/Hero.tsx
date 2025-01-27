@@ -4,7 +4,7 @@ import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from "rec
 
 export default function Hero() {
   return (
-  <div className="max-w-5xl mx-auto text-center mt-10">
+  <div className="max-w-5xl mx-auto text-center mt-10 mb-10 sm:mb-20">
       <div className="flex flex-wrap justify-center">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
           <span className="block sm:inline mr-2 text-[var(--special)]">Discover, Apply, Track </span>
