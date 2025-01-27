@@ -153,7 +153,7 @@ export default function HeroSecond() {
   }), []);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap', justifyContent: 'center' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
       <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
         <div style={{ margin: '0 1% 5px 1%' }}>
           <Image src={'search.svg'} width={'526'} height={'296'} />
@@ -163,7 +163,7 @@ export default function HeroSecond() {
         </div>
       </div>
 
-      <Card className="" style={{ margin: '10px auto', width: '65%' }}>
+      <Card className="" style={{ margin: '10px auto', width: '85%' }}>
         <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
           <div className="flex flex-1 flex-col justify-center gap-1 px-4 py-4 sm:py-4">
             <CardTitle>Bar Chart - Interactive</CardTitle>
@@ -192,7 +192,7 @@ export default function HeroSecond() {
             })}
           </div>
         </CardHeader>
-        <CardContent className="px-2 sm:p-4">
+        <CardContent className="px-2 sm:p-4" style={{ marginTop: '20px' }}>
           <ChartContainer
             config={chartConfig}
             className="aspect-auto h-[250px] w-full"
