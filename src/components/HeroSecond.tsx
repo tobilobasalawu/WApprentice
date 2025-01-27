@@ -155,18 +155,17 @@ export default function HeroSecond() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap', justifyContent: 'center' }}>
       <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <div style={{ margin: '10px', marginLeft: '2%', marginRight: '2%' }}>
+        <div style={{ margin: '0 1% 5px 1%' }}>
           <Image src={'search.svg'} width={'526'} height={'296'} />
         </div>
-        <div style={{ margin: '10px', marginLeft: '2%', marginRight: '2%' }}>
+        <div style={{ margin: '0 1% 5px 1%' }}>
           <Image src={'rangedisplay.svg'} width={'526'} height={'296'} />
         </div>
       </div>
 
-
-      <Card >
+      <Card className="" style={{ margin: '10px auto', width: '65%' }}>
         <CardHeader className="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row">
-          <div className="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6">
+          <div className="flex flex-1 flex-col justify-center gap-1 px-4 py-4 sm:py-4">
             <CardTitle>Bar Chart - Interactive</CardTitle>
             <CardDescription>
               Showing total visitors for the last 3 months
@@ -179,7 +178,7 @@ export default function HeroSecond() {
                 <button
                   key={chart}
                   data-active={activeChart === chart}
-                  className="relative z-30 flex flex-1 flex-col justify-center gap-1 border-t px-6 py-4 text-left even:border-l data-[active=true]:bg-muted/50 sm:border-l sm:border-t-0 sm:px-8 sm:py-6"
+                  className="relative z-30 flex flex-1 flex-col justify-center gap-1 border-t px-4 py-2 text-left even:border-l data-[active=true]:bg-muted/50 sm:border-l sm:border-t-0 sm:px-6 sm:py-4"
                   onClick={() => setActiveChart(chart)}
                 >
                   <span className="text-xs text-muted-foreground">
@@ -193,7 +192,7 @@ export default function HeroSecond() {
             })}
           </div>
         </CardHeader>
-        <CardContent className="px-2 sm:p-6">
+        <CardContent className="px-2 sm:p-4">
           <ChartContainer
             config={chartConfig}
             className="aspect-auto h-[250px] w-full"
@@ -236,7 +235,7 @@ export default function HeroSecond() {
                   />
                 }
               />
-              <Bar dataKey={activeChart} fill={`var(--color-${activeChart})`} />
+              <Bar dataKey={activeChart} fill={activeChart === 'desktop' ? '#060B27' : '#5865F2'} />
             </BarChart>
           </ChartContainer>
         </CardContent>
