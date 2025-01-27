@@ -12,7 +12,7 @@ export default function HeroSecond() {
         </div>
       </div>
       
-      <div>
+      <div style={{ margin: '3%' }}>
         <Image src={'graph.svg'} width={'1076'} height={'308'} />
       </div>
     </div>
