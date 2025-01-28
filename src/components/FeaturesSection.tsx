@@ -79,51 +79,6 @@ export default function FeaturesSection() {
             </div>
         </div>
 
-        <div className="flex flex-row jusitify-center items-start px-40 py-2 gap-10">
-            <div className="w-full lg:w-1/2 max-w-[500px] mt-4 md:mt-6">
-            <div className="bg-[var(--subsecond)] p-5 md:p-6 rounded-2xl space-y-4 shadow-lg">
-                <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">
-                Ace Applications with Top Secret CV & Interview Resources
-                </h3>
-                    {/* Swiper Carousel */}
-                    <Swiper
-                    spaceBetween={20} // Space between cards
-                    slidesPerView={1.5} // Number of cards visible at once
-                    pagination={{ clickable: true }} // Add pagination dots
-                    className="w-full"
-                    >
-                    {/* Card 1 */}
-                    <SwiperSlide>
-                        <Card className="w-full max-w-[300px] mx-auto"> {/* Reduced width */}
-                        <CardHeader>
-                            <CardTitle>Situational Judgement Test</CardTitle>
-                            <CardDescription>
-                            Assess your decision-making skills through work-related scenarios to boost your application
-                            </CardDescription>
-                        </CardHeader>
-                        <Button className="ml-5 mb-5 bg-[#008055] text-white" variant={'outline'}>Start Test</Button>
-                        </Card>
-                    </SwiperSlide>
-
-                    {/* Card 2 */}
-                    <SwiperSlide>
-                        <Card className="w-full max-w-[300px] mx-auto"> {/* Reduced width */}
-                        <CardHeader>
-                            <CardTitle>Numerical Data Test</CardTitle>
-                            <CardDescription>
-                                Evaluate your ability to work with numbers, interpret data and solve mathematical problems
-                            </CardDescription>
-                        </CardHeader>
-                        <Button className="ml-5 mb-5 bg-[#008055] text-white" variant={'outline'}>Start Test</Button>
-                        </Card>
-                    </SwiperSlide>
-
-                    {/* Add more cards as needed */}
-                    </Swiper>
-            </div>
-            </div>
-        </div>
-
       </div>
     );
   }
