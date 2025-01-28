@@ -10,21 +10,19 @@ export default function FeaturesSection() {
             an <span className="text-[var(--special)]">Apprenticeship</span>
             </h2>
             
-            <div className="space-y-3 text-gray-600"> {/* Adds vertical spacing */}
+            <div className="space-y-0.2 text-gray-600"> {/* Adds vertical spacing */}
             <p>Know your options with Employer/training provider</p>
             <p>reviews, compare salaries across different levels,</p>
             <p>discover what happens after an apprenticeship, set a</p>
             <p>dedicated time for application (balance your a-levels) and</p>
             <p>so many other features.</p>
             </div>
-
-            <p className="mt-6 font-bold text-[var(--special)]"> {/* Secret resources */}
-            Ace Applications with Top Secret CV & Interview Resources
-            </p>
         </div>
 
-        <div>
-            
+        <div className="bg-[var(--subsecond)] h-[200px] rounded-[24px]">
+            <p className="mt-6 ml-6 font-bold text-[var(--foreground)]"> {/* Secret resources */}
+                Ace Applications with Top Secret CV & Interview Resources
+            </p>
         </div>
     </div>
     );
