@@ -1,3 +1,4 @@
+'use client';
 import {
     Card,
     CardContent,
@@ -7,6 +8,10 @@ import {
     CardTitle,
   } from "@/components/ui/card"
   import { Button } from "@/components/ui/button";
+  import { Swiper, SwiperSlide } from 'swiper/react';
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
   
 export default function FeaturesSection() {
     return (
@@ -33,14 +38,41 @@ export default function FeaturesSection() {
             <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">
               Ace Applications with Top Secret CV & Interview Resources
             </h3>
-            <Card>
-                <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
-                </CardHeader>
-                <Button>Start Test</Button>
-            </Card>
+                {/* Swiper Carousel */}
+                <Swiper
+                spaceBetween={16} // Space between cards
+                slidesPerView={1} // Number of cards visible at once
+                pagination={{ clickable: true }} // Add pagination dots
+                className="w-full"
+                >
+                {/* Card 1 */}
+                <SwiperSlide>
+                    <Card className="w-full max-w-[300px] mx-auto"> {/* Reduced width */}
+                    <CardHeader>
+                        <CardTitle>Situational Judgement Test</CardTitle>
+                        <CardDescription>
+                        Assess your decision-making skills through work-related scenarios to boost your application
+                        </CardDescription>
+                    </CardHeader>
+                    <Button className="ml-5 mb-5" variant={'outline'}>Start Test</Button>
+                    </Card>
+                </SwiperSlide>
 
+                {/* Card 2 */}
+                <SwiperSlide>
+                    <Card className="w-full max-w-[300px] mx-auto"> {/* Reduced width */}
+                    <CardHeader>
+                        <CardTitle>Numerical Data Test</CardTitle>
+                        <CardDescription>
+                        Evaluate your ability with numbers, interpret data, and solve math problems
+                        </CardDescription>
+                    </CardHeader>
+                    <Button className="ml-5 mb-5" variant={'outline'}>Start Test</Button>
+                    </Card>
+                </SwiperSlide>
+
+                {/* Add more cards as needed */}
+                </Swiper>
           </div>
         </div>
       </div>
