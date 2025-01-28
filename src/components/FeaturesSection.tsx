@@ -1,3 +1,13 @@
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+  } from "@/components/ui/card"
+  import { Button } from "@/components/ui/button";
+  
 export default function FeaturesSection() {
     return (
       <div className="flex flex-col lg:flex-row justify-center items-start gap-2 px-4 py-2 md:py-8">
@@ -23,12 +33,14 @@ export default function FeaturesSection() {
             <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">
               Ace Applications with Top Secret CV & Interview Resources
             </h3>
-            <p className="text-gray-600 text-base md:text-lg">
-              Access your decision-making skills
-            </p>
-            <button className="bg-[var(--special)] text-white px-5 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base">
-              Get Started
-            </button>
+            <Card>
+                <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                </CardHeader>
+                <Button>Start Test</Button>
+            </Card>
+
           </div>
         </div>
       </div>
