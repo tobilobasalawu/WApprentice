@@ -6,7 +6,7 @@ export default function Hero() {
   return (
   <div className="max-w-5xl mx-auto text-center mt-10 mb-10 sm:mb-20">
       <div className="flex flex-wrap justify-center">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-Satoshi tracking-tight">
           <span className="block sm:inline mr-2 text-[var(--special)]">Discover, Apply, Track </span>
           <span className="block sm:inline mr-2">Your Dream Apprenticeship with</span>
           <span className="block sm:inline text-[var(--special)]">Ease</span>

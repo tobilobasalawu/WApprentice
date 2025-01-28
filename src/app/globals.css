@@ -15,25 +15,29 @@ body {
   font-family: 'Satoshi', 'Inter', 'Arial', 'sans-serif';
 }
 
+h2 {
+  font-family: 'Satoshi', 'Arial', 'Sans-serif';
+}
+
 @font-face {
   font-family: 'Satoshi';
   font-weight: 400;
   font-style: normal;
-  src: url('/src/assets/fonts/Satoshi-Regular.woff2') format('woff2');
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Satoshi';
   font-weight: 700;
   font-style: normal;
-  src: url('/src/assets/fonts/Satoshi-Bold.woff2') format('woff2');
+  src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter';
   font-weight: 400;
   font-style: normal;
-  src: url('/src/assets/fonts/Inter_24pt-Regular.ttf') format('truetype');
+  src: url('/fonts/Inter_24pt-Regular.ttf') format('truetype');
 }
 
 .btn-primary {
