@@ -1,38 +1,32 @@
 export default function FeaturesSection() {
     return (
-      <div className="min-h-screen flex flex-col md:flex-row justify-center items-center gap-8 px-4 py-12">
-        {/* Text Content Section */}
-        <div className="max-w-2xl md:w-1/2 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-2 px-4 py-2 md:py-8">
+        {/* Text Content Section - Adjusted for iPad */}
+        <div className="w-full lg:w-1/2 max-w-[600px] space-y-4 mt-2 md:mt-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug">
             All the <span className="text-[var(--special)]">tools,</span><br />
             you need to secure<br />
             an <span className="text-[var(--special)]">Apprenticeship</span>
           </h2>
-          
-          <div className="space-y-0.2 text-gray-600">
-            <p>Know your options with Employer/training provider</p>
-            <p>reviews, compare salaries across different levels,</p>
-            <p>discover what happens after an apprenticeship, set a</p>
-            <p>dedicated time for application (balance your a-levels) and</p>
-            <p>so many other features.</p>
+  
+          <div className="space-y-0.3 text-gray-600 text-base md:text-lg">
+            <p>Know your options with Employer/training provider reviews,</p>
+            <p>compare salaries across different levels, discover what</p>
+            <p>happens after an apprenticeship, set a dedicated time for</p>
+            <p>application (balance your a-levels) and so many other features.</p>
           </div>
         </div>
   
-        {/* Box Section */}
-        <div className="w-full md:w-1/2 max-w-md">
-          <div className="bg-[var(--subsecond)] p-6 rounded-[24px] space-y-6 h-full shadow-lg">
-            <div>
-              <h3 className="text-xl font-bold text-[var(--foreground)] mb-4">
-                Ace Applications with Top Secret CV &<br />
-                Interview Resources
-              </h3>
-              <p className="text-gray-600">
-                Access your decision-making skills
-              </p>
-            </div>
-            
-            {/* Add any additional buttons or elements here */}
-            <button className="bg-[var(--special)] text-white px-6 py-3 rounded-lg">
+        {/* Box Section - iPad Optimized */}
+        <div className="w-full lg:w-1/2 max-w-[500px] mt-4 md:mt-6">
+          <div className="bg-[var(--subsecond)] p-5 md:p-6 rounded-2xl space-y-4 shadow-lg">
+            <h3 className="text-lg md:text-xl font-bold text-[var(--foreground)]">
+              Ace Applications with Top Secret CV & Interview Resources
+            </h3>
+            <p className="text-gray-600 text-base md:text-lg">
+              Access your decision-making skills
+            </p>
+            <button className="bg-[var(--special)] text-white px-5 py-2 md:px-6 md:py-3 rounded-lg text-sm md:text-base">
               Get Started
             </button>
           </div>
