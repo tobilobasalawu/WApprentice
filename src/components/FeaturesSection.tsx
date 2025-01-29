@@ -30,14 +30,14 @@ export default function FeaturesSection() {
                         <p>Know your options with Employer/training provider reviews, compare salaries across different levels, discover what happens after an apprenticeship, set a dedicated time for application (balance your a-levels) and so many other features.</p>
                     </div>
 
-                    <div className="space-y-6 bg-[var(--subsecond)] p-6 rounded-2xl shadow-lg">
+                    <div className="space-y-6 bg-[var(--subsecond)] p-5 rounded-2xl shadow-lg">
                     {/* Job Listing Card 1 */}
                         <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-6">
-                            Ace Applications with Exclusive Interview & Assessment Resources
+                            Apply Fast and Track Your Progress with just One Click
                         </h3>
                             <Swiper
                                 spaceBetween={10}
-                                slidesPerView={1.8}
+                                slidesPerView={1.5}
                                 breakpoints={{
                                     768: {
                                         slidesPerView: 1.5
@@ -47,17 +47,28 @@ export default function FeaturesSection() {
                                 className="pb-8"
                             >
                             <SwiperSlide>
-                                <Card className="h-full">
-                                    <CardHeader>
-                                        <CardTitle>Situational Judgement Test (SJT)</CardTitle>
-                                        <CardDescription>
-                                            Assess how you handle workplace scenarios by presenting real-life work situations with multiple-choice responses to evaluate decision-making and problem-solving.
-                                        </CardDescription>
-                                    </CardHeader>
-                                    <div className="px-6 pb-4">
-                                        <Button className="w-full bg-[#008055] hover:bg-[#006747] text-white">
-                                            Start Test
+                                <Card className="h-full p-6">
+                                    <div className="flex justify-between items-start">
+                                        <div className="space-y-2">
+                                            <h3 className="text-xl font-semibold text-[var(--primary)]">
+                                                Cyberspace Communication Specialist
+                                            </h3>
+                                            <div className="flex gap-4 text-sm">
+                                                <span className="bg-[var(--primary)] text-white px-2 py-1 rounded">Full-Time</span>
+                                                <span className="text-muted-foreground">Wolverhampton</span>
+                                            </div>
+                                        </div>
+                                        <Button variant="outline" className="border-[var(--special)] text-[var(--special)]">
+                                            Apply
                                         </Button>
+                                    </div>
+                                    
+                                    <div className="mt-4 flex flex-col justify-between items-start">
+                                        <div className="space-y-1">
+                                            <p className="text-2xl font-bold text-[var(--special)]">£25,200</p>
+                                            <p className="text-sm text-muted-foreground">Royal Air Force</p>
+                                        </div>
+                                        <span className="text-sm text-muted-foreground">☐ 12 Hours Ago</span>
                                     </div>
                                 </Card>
                             </SwiperSlide>
