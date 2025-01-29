@@ -29,6 +29,81 @@ export default function FeaturesSection() {
                     <div className="space-y-4 text-gray-600 text-lg">
                         <p>Know your options with Employer/training provider reviews, compare salaries across different levels, discover what happens after an apprenticeship, set a dedicated time for application (balance your a-levels) and so many other features.</p>
                     </div>
+
+                    <div className="space-y-6">
+                    {/* Job Listing Card 1 */}
+                    <Card className="p-6 bg-[var(--subsecond)]">
+                        <div className="flex justify-between items-start">
+                            <div className="space-y-2">
+                                <h3 className="text-xl font-semibold text-[var(--foreground)]">
+                                    Cyberspace Communication Specialist
+                                </h3>
+                                <div className="flex gap-4 text-sm">
+                                    <span className="bg-[var(--primary)] text-white px-2 py-1 rounded">Full-Time</span>
+                                    <span className="text-muted-foreground">Wolverhampton</span>
+                                </div>
+                            </div>
+                            <span className="text-sm text-muted-foreground">☐ 12 Hours Ago</span>
+                        </div>
+                        
+                        <div className="mt-4 flex justify-between items-center">
+                            <div className="space-y-1">
+                                <p className="text-2xl font-bold text-[var(--special)]">£25,200</p>
+                                <p className="text-sm text-muted-foreground">Royal Air Force</p>
+                            </div>
+                            <Button variant="outline" className="border-[var(--special)] text-[var(--special)]">
+                                Quick Apply
+                            </Button>
+                        </div>
+                    </Card>
+
+                    {/* Job Listing Card 2 */}
+                    <Card className="p-6 bg-[var(--subsecond)]">
+                        <div className="flex justify-between items-start">
+                            <div className="space-y-2">
+                                <h3 className="text-xl font-semibold text-[var(--foreground)]">
+                                    Data Analyst Apprentice
+                                </h3>
+                                <div className="flex gap-4 text-sm">
+                                    <span className="bg-[var(--primary)] text-white px-2 py-1 rounded">Part-Time</span>
+                                    <span className="text-muted-foreground">London</span>
+                                </div>
+                            </div>
+                            <span className="text-sm text-muted-foreground">☐ 2 Days Ago</span>
+                        </div>
+                        
+                        <div className="mt-4 flex justify-between items-center">
+                            <div className="space-y-1">
+                                <p className="text-2xl font-bold text-[var(--special)]">£22,500</p>
+                                <p className="text-sm text-muted-foreground">Tech Innovators UK</p>
+                            </div>
+                            <Button variant="outline" className="border-[var(--special)] text-[var(--special)]">
+                                Quick Apply
+                            </Button>
+                        </div>
+                    </Card>
+
+                    {/* Deadline Tracker */}
+                    <Card className="p-6 bg-[var(--subsecond)]">
+                        <div className="space-y-4">
+                            <h3 className="text-xl font-semibold text-[var(--foreground)]">
+                                Get Timely Updates and Never Miss a Deadline
+                            </h3>
+                            <div className="flex items-center gap-4">
+                                <div className="text-3xl font-bold text-[var(--special)]">
+                                    16:09:03
+                                </div>
+                                <div className="text-sm text-muted-foreground">
+                                    Next application window closes in
+                                </div>
+                            </div>
+                            <Button className="w-full bg-[var(--special)] hover:bg-[var(--primary)] text-white">
+                                Set Reminder
+                            </Button>
+                        </div>
+                    </Card>
+                </div>
+
                 </div>
 
                 {/* Right Column - Cards */}
