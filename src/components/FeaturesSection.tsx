@@ -1,21 +1,16 @@
 'use client';
-import { BellRing, Check } from "lucide-react"
-import { cn } from "@/lib/utils";
 import {
     Card,
     CardHeader,
-    CardContent,
-    CardFooter,
     CardTitle,
     CardDescription,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Switch } from "@/components/ui/switch"
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import Image from "next/image";
 
 export default function FeaturesSection() {
@@ -193,7 +188,7 @@ export default function FeaturesSection() {
                     <div className="space-y-6 bg-[var(--subsecond)] p-6 rounded-2xl shadow-lg">
                     {/* Deadline Tracker */}
                         <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-6">
-                            Ace Applications with Exclusive Interview & Assessment Resources
+                            Get Timely Updates and Never Miss a Deadline
                         </h3>
                         <Card className="p-6 bg-[var(--subsecond)]">
                             <div className="space-y-4">
