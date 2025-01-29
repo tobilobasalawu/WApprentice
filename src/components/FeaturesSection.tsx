@@ -1,12 +1,17 @@
 'use client';
+import { BellRing, Check } from "lucide-react"
+import { cn } from "@/lib/utils";
 import {
     Card,
     CardHeader,
+    CardContent,
+    CardFooter,
     CardTitle,
     CardDescription,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Switch } from "@/components/ui/switch"
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
