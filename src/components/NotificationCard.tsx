@@ -14,15 +14,15 @@ import { Switch } from "@/components/ui/switch"
 
 const notifications = [
   {
-    title: "You've have .",
+    title: "🔔 You've successfully applied to the Software Engineering Apprenticeship at JP Morgan!",
     description: "1 hour ago",
   },
   {
-    title: "You have a new message!",
-    description: "1 hour ago",
+    title: "📊 The Bloomberg Apprenticeship now has 1,200+ applicants. Strengthen your application with our CV builder tool.",
+    description: "25 minutes ago",
   },
   {
-    title: "Your subscription is expiring soon!",
+    title: "⏳ Amazon's Business Analyst Apprenticeship deadline closes in 48 hours. Complete your application now!",
     description: "2 hours ago",
   },
 ]
@@ -44,7 +44,7 @@ export function CardDemo({ className, ...props }: CardProps) {
               Push Notifications
             </p>
             <p className="text-sm text-muted-foreground">
-              Send notifications to device.
+              Send notifications to your Email.
             </p>
           </div>
           <Switch />
@@ -57,7 +57,7 @@ export function CardDemo({ className, ...props }: CardProps) {
             >
               <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500" />
               <div className="space-y-1">
-                <p className="text-sm font-medium leading-none">
+                <p className="text-sm font-medium leading-2">
                   {notification.title}
                 </p>
                 <p className="text-sm text-muted-foreground">
