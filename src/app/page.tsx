@@ -3,6 +3,7 @@ import HeroSecond from '@/components/HeroSecond';
 import React from 'react';
 import Hero from '@/components/Hero';
 import FeaturesSection  from '@/components/FeaturesSection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <HeroSecond />
       <FeaturesSection />
+      <Footer />
     </>
   );
 }
