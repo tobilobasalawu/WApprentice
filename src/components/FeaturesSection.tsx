@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from "next/image";
 
 export default function FeaturesSection() {
@@ -158,14 +159,17 @@ export default function FeaturesSection() {
                             <div className="space-y-6">
                                 <Card>
                                     <CardHeader>
-                                        <CardTitle>KPMG</CardTitle>
+                                        <CardTitle className="mt-2">KPMG</CardTitle>
                                         <CardDescription>
                                             "Great Company, doing an apprenticeship @KPMG was the best decision of my life"
                                         </CardDescription>
-                                        <div className="mt-4 text-sm text-gray-500">
-                                            <Image src={''}/>
+                                        <div className="flex jusitify-center gap-3 text-sm text-gray-500">
+                                            <Avatar>
+                                                <AvatarImage src="https://github.com/shadcn.png" />
+                                                <AvatarFallback>CN</AvatarFallback>
+                                            </Avatar>
                                             <div>
-                                                <p>Pra******</p>
+                                                <p className="text-black font-bold">Pra******</p>
                                                 <p>Level 6 Audit Apprentice</p>
                                             </div>
                                         </div>
