@@ -51,9 +51,9 @@ export default function FeaturesSection() {
                             <SwiperSlide>
                                 <Card className="h-full">
                                     <CardHeader>
-                                        <CardTitle>Situational Judgement Test</CardTitle>
+                                        <CardTitle>Situational Judgement Test (SJT)</CardTitle>
                                         <CardDescription>
-                                            Assess your decision-making skills through work-related scenarios to boost your application
+                                            Assess how you handle workplace scenarios by presenting real-life work situations with multiple-choice responses to evaluate decision-making and problem-solving.
                                         </CardDescription>
                                     </CardHeader>
                                     <div className="px-6 pb-4">
@@ -69,7 +69,7 @@ export default function FeaturesSection() {
                                     <CardHeader>
                                         <CardTitle>Numerical Data Test</CardTitle>
                                         <CardDescription>
-                                            Evaluate your ability to work with numbers, interpret data and solve mathematical problems
+                                            Evaluate your ability  to work with numbers, percentages, ratios, and basic statistics, often involving data interpretation from graphs, charts, and tables.
                                         </CardDescription>
                                     </CardHeader>
                                     <div className="px-6 pb-4">
@@ -79,6 +79,73 @@ export default function FeaturesSection() {
                                     </div>
                                 </Card>
                             </SwiperSlide>
+
+                            <SwiperSlide>
+                                <Card className="h-full">
+                                    <CardHeader>
+                                        <CardTitle>Verbal Reasoning Test</CardTitle>
+                                        <CardDescription>
+                                            Measure your ability to understand & interpret written information, usually through comprehension-based multiple-choice questions. It helps assess your communication & critical thinking skills.
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <div className="px-6 pb-4">
+                                        <Button className="w-full bg-[#008055] hover:bg-[#006747] text-white">
+                                            Start Test
+                                        </Button>
+                                    </div>
+                                </Card>
+                            </SwiperSlide>
+
+
+                            <SwiperSlide>
+                                <Card className="h-full">
+                                    <CardHeader>
+                                        <CardTitle>Logical/Abstract Reasoning Test</CardTitle>
+                                        <CardDescription>
+                                            This examines your ability to identify patterns, sequences, and relationships between shapes and symbols, testing problem-solving and analytical thinking.
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <div className="px-6 pb-4">
+                                        <Button className="w-full bg-[#008055] hover:bg-[#006747] text-white">
+                                            Start Test
+                                        </Button>
+                                    </div>
+                                </Card>
+                            </SwiperSlide>
+
+
+                            <SwiperSlide>
+                                <Card className="h-full">
+                                    <CardHeader>
+                                        <CardTitle>Personality Assessment</CardTitle>
+                                        <CardDescription>
+                                            Evaluates behavioral traits and work style to determine cultural fit, with no right or wrong answers.
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <div className="px-6 pb-4">
+                                        <Button className="w-full bg-[#008055] hover:bg-[#006747] text-white">
+                                            Start Test
+                                        </Button>
+                                    </div>
+                                </Card>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <Card className="h-full">
+                                    <CardHeader>
+                                        <CardTitle>Technical Skills Test</CardTitle>
+                                        <CardDescription>
+                                            Coding challenges, Debugging tasks, or problem-solving exercises using languages like Python, JavaScript, or SQL
+                                        </CardDescription>
+                                    </CardHeader>
+                                    <div className="px-6 pb-4">
+                                        <Button className="w-full bg-[#008055] hover:bg-[#006747] text-white">
+                                            Start Test
+                                        </Button>
+                                    </div>
+                                </Card>
+                            </SwiperSlide>
+
                         </Swiper>
                     </div>
 
