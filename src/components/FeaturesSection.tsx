@@ -96,7 +96,92 @@ export default function FeaturesSection() {
                                 </Card>
                             </SwiperSlide>
 
-                            {/* Repeat similar structure for other slides */}
+                            <SwiperSlide>
+                                <Card className="h-full p-4 md:p-6 flex flex-col">
+                                    <div className="flex justify-between items-start gap-2">
+                                        <div className="space-y-2 flex-1">
+                                            <h3 className="text-lg md:text-xl font-semibold text-[var(--primary)]">
+                                                Digital & Technology Degree Apprenticeship 2025
+                                            </h3>
+                                            <div className="flex flex-wrap gap-2">
+                                                <span className="bg-[#E9EEF6] text-sm text-[var(--primary)] px-3 py-1 rounded-full">
+                                                    Full-Time
+                                                </span>
+                                                <span className="bg-[#E9EEF6] text-sm text-[var(--primary)] px-3 py-1 rounded-full">
+                                                    Telford
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <Button variant="ghost" className="p-1 md:p-2">
+                                            <Image 
+                                                src={'direction.svg'} 
+                                                width={24} 
+                                                height={24} 
+                                                className="w-6 h-6 md:w-8 md:h-8"
+                                                alt="Direction icon"
+                                            />
+                                        </Button>
+                                    </div>
+                                    
+                                    <div className="mt-4 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                                        <div className="space-y-1">
+                                            <p className="text-xl md:text-2xl font-bold text-[var(--special)]">
+                                                £20,000
+                                            </p>
+                                            <p className="text-xs md:text-sm text-muted-foreground">
+                                               Capgemini
+                                            </p>
+                                        </div>
+                                        <span className="text-xs md:text-sm text-muted-foreground">
+                                            ☐ 12 Hours Ago
+                                        </span>
+                                    </div>
+                                </Card>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <Card className="h-full p-4 md:p-6 flex flex-col">
+                                    <div className="flex justify-between items-start gap-2">
+                                        <div className="space-y-2 flex-1">
+                                            <h3 className="text-lg md:text-xl font-semibold text-[var(--primary)]">
+                                                Rolls-Royce Finance Professional Degree Apprenticeship
+                                            </h3>
+                                            <div className="flex flex-wrap gap-2">
+                                                <span className="bg-[#E9EEF6] text-sm text-[var(--primary)] px-3 py-1 rounded-full">
+                                                    Full-Time
+                                                </span>
+                                                <span className="bg-[#E9EEF6] text-sm text-[var(--primary)] px-3 py-1 rounded-full">
+                                                    Derby
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <Button variant="ghost" className="p-1 md:p-2">
+                                            <Image 
+                                                src={'direction.svg'} 
+                                                width={24} 
+                                                height={24} 
+                                                className="w-6 h-6 md:w-8 md:h-8"
+                                                alt="Direction icon"
+                                            />
+                                        </Button>
+                                    </div>
+                                    
+                                    <div className="mt-4 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
+                                        <div className="space-y-1">
+                                            <p className="text-xl md:text-2xl font-bold text-[var(--special)]">
+                                                £20,735
+                                            </p>
+                                            <p className="text-xs md:text-sm text-muted-foreground">
+                                                ROLLS-ROYCE PLC
+                                            </p>
+                                        </div>
+                                        <span className="text-xs md:text-sm text-muted-foreground">
+                                            ☐ 12 Hours Ago
+                                        </span>
+                                    </div>
+                                </Card>
+                            </SwiperSlide>
+
                         </Swiper>
                     </div>
                     
