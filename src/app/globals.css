@@ -189,3 +189,13 @@ h2 {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
+
+.swiper-pagination-bullet {
+  background: var(--foreground) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--special) !important;
+  opacity: 1 !important;
+}

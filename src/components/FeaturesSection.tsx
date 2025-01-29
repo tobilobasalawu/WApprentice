@@ -34,12 +34,12 @@ export default function FeaturesSection() {
                     {/* Test Cards Section */}
                     <div className="bg-[var(--subsecond)] p-6 rounded-2xl shadow-lg">
                         <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-6">
-                            Ace Applications with Top Secret CV & Interview Resources
+                            Ace Applications with Exclusive Interview & Assessment Resources
                         </h3>
                         
                         <Swiper
-                            spaceBetween={20}
-                            slidesPerView={1}
+                            spaceBetween={10}
+                            slidesPerView={1.8}
                             breakpoints={{
                                 768: {
                                     slidesPerView: 1.5
