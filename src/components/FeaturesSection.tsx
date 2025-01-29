@@ -31,63 +31,72 @@ export default function FeaturesSection() {
                     </div>
 
                     <div className="space-y-6 bg-[var(--subsecond)] p-5 rounded-2xl shadow-lg">
-                    {/* Job Listing Card 1 */}
                         <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-6">
                             Apply Fast and Track Your Progress with just One Click
                         </h3>
-                            <Swiper
-                                spaceBetween={10}
-                                slidesPerView={1.5}
-                                breakpoints={{
-                                    768: {
-                                        slidesPerView: 1.5
-                                    }
-                                }}
-                                pagination={{ clickable: true }}
-                                className="pb-8"
-                            >
+                        <Swiper
+                            spaceBetween={16}
+                            slidesPerView={1}
+                            breakpoints={{
+                                640: {  // Mobile breakpoint
+                                    slidesPerView: 1.2
+                                },
+                                768: {  // Tablet breakpoint
+                                    slidesPerView: 1.5,
+                                    spaceBetween: 20
+                                },
+                                1024: {  // Desktop breakpoint
+                                    slidesPerView: 1.8,
+                                    spaceBetween: 24
+                                }
+                            }}
+                            pagination={{ clickable: true }}
+                            className="pb-8"
+                        >
                             <SwiperSlide>
-                                <Card className="h-full p-6 w-[85%]">
-                                    <div className="flex justify-between items-start">
-                                        <div className="space-y-2">
-                                            <h3 className="text-xl font-semibold text-[var(--primary)]">
+                                <Card className="h-full p-4 md:p-6 flex flex-col">
+                                    <div className="flex justify-between items-start gap-2">
+                                        <div className="space-y-2 flex-1">
+                                            <h3 className="text-lg md:text-xl font-semibold text-[var(--primary)]">
                                                 Cyberspace Communication Specialist
                                             </h3>
-                                            <div className="flex gap-4 text-sm">
-                                                <span className="bg-[#E9EEF6] text-sm text-[-var(--primary)] px-2 py-1 rounded-full">Full-Time</span>
-                                                <span className="bg-[#E9EEF6] text-sm text-[-var(--primary)] px-2 py-1 rounded-full">Wolverhampton</span>
+                                            <div className="flex flex-wrap gap-2">
+                                                <span className="bg-[#E9EEF6] text-sm text-[var(--primary)] px-3 py-1 rounded-full">
+                                                    Full-Time
+                                                </span>
+                                                <span className="bg-[#E9EEF6] text-sm text-[var(--primary)] px-3 py-1 rounded-full">
+                                                    Wolverhampton
+                                                </span>
                                             </div>
                                         </div>
-                                        <Button variant="ghost" className="border-[var(--special)] text-[var(--special)]">
-                                            <Image src={'direction.svg'} width={'30'} height={'30'}/>
+                                        <Button variant="ghost" className="p-1 md:p-2">
+                                            <Image 
+                                                src={'direction.svg'} 
+                                                width={24} 
+                                                height={24} 
+                                                className="w-6 h-6 md:w-8 md:h-8"
+                                                alt="Direction icon"
+                                            />
                                         </Button>
                                     </div>
                                     
-                                    <div className="mt-4 flex flex-col justify-between items-start">
+                                    <div className="mt-4 flex flex-col md:flex-row md:justify-between md:items-center gap-2">
                                         <div className="space-y-1">
-                                            <p className="text-2xl font-bold text-[var(--special)]">£25,200</p>
-                                            <p className="text-sm text-muted-foreground">Royal Air Force</p>
+                                            <p className="text-xl md:text-2xl font-bold text-[var(--special)]">
+                                                £25,200
+                                            </p>
+                                            <p className="text-xs md:text-sm text-muted-foreground">
+                                                Royal Air Force
+                                            </p>
                                         </div>
-                                        <span className="text-sm text-muted-foreground">☐ 12 Hours Ago</span>
+                                        <span className="text-xs md:text-sm text-muted-foreground">
+                                            ☐ 12 Hours Ago
+                                        </span>
                                     </div>
                                 </Card>
                             </SwiperSlide>
 
-                            <SwiperSlide>
-                                <Card className="h-full">
-                                    <CardHeader>
-                                        <CardTitle>Numerical Data Test</CardTitle>
-                                        <CardDescription>
-                                            Evaluate your ability  to work with numbers, percentages, ratios, and basic statistics, often involving data interpretation from graphs, charts, and tables.
-                                        </CardDescription>
-                                    </CardHeader>
-                                    <div className="px-6 pb-4">
-                                        <Button className="w-full bg-[#008055] hover:bg-[#006747] text-white">
-                                            Start Test
-                                        </Button>
-                                    </div>
-                                </Card>
-                            </SwiperSlide>
+                            {/* Repeat similar structure for other slides */}
                         </Swiper>
                     </div>
                     
