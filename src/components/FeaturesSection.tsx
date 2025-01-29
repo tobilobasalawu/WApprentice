@@ -11,6 +11,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { CardDemo } from "./NotificationCard";
 import Image from "next/image";
 
 export default function FeaturesSection() {
@@ -185,29 +186,12 @@ export default function FeaturesSection() {
                         </Swiper>
                     </div>
                     
-                    <div className="space-y-6 bg-[var(--subsecond)] p-6 rounded-2xl shadow-lg">
+                    <div className="flex flex-col space-y-6 bg-[var(--subsecond)] p-6 rounded-2xl shadow-lg">
                     {/* Deadline Tracker */}
                         <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-6">
                             Get Timely Updates and Never Miss a Deadline
                         </h3>
-                        <Card className="p-6 bg-[var(--subsecond)]">
-                            <div className="space-y-4">
-                                <h3 className="text-xl font-semibold text-[var(--foreground)]">
-                                    Get Timely Updates and Never Miss a Deadline
-                                </h3>
-                                <div className="flex items-center gap-4">
-                                    <div className="text-3xl font-bold text-[var(--special)]">
-                                        16:09:03
-                                    </div>
-                                    <div className="text-sm text-muted-foreground">
-                                        Next application window closes in
-                                    </div>
-                                </div>
-                                <Button className="w-full bg-[var(--special)] hover:bg-[var(--primary)] text-white">
-                                    Set Reminder
-                                </Button>
-                            </div>
-                        </Card>
+                        <CardDemo className="w-full bg-[var(--subsecond)] text-[var(--foreground)]"/>
                     </div>
 
                 </div>
