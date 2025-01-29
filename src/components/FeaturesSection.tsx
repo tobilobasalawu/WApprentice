@@ -153,39 +153,54 @@ export default function FeaturesSection() {
 
                     {/* Employer Reviews Section */}
                     <div className="bg-[var(--subsecond)] p-6 rounded-2xl shadow-lg">
-                        <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-6">
+                        <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-8">
                             Discover Top Employers: Exclusive Reviews and Ratings from Apprentices
                         </h3>
-                            <div className="space-y-6">
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="mt-2">KPMG</CardTitle>
-                                        <CardDescription>
-                                            "Great Company, doing an apprenticeship @KPMG was the best decision of my life"
-                                        </CardDescription>
-                                        <div className="flex jusitify-center gap-3 text-sm text-gray-500">
-                                            <Avatar>
-                                                <AvatarImage src="https://github.com/shadcn.png" />
-                                                <AvatarFallback>CN</AvatarFallback>
-                                            </Avatar>
-                                            <div>
-                                                <p className="text-black font-bold">Pra******</p>
-                                                <p>Level 6 Audit Apprentice</p>
-                                            </div>
+                        <div className="space-y-8">
+                            <Card className="p-4">
+                                <CardHeader className="space-y-4 px-0 pt-0">
+                                    <div className="flex justify-between">
+                                        <CardTitle className="text-sm">KPMG</CardTitle>
+                                        <p className="text-sm">1k Reviews</p>
+                                    </div>
+                                    <CardDescription className="text-base">
+                                        I do enjoy my program a lot. I am happy working with many different stakeholders and it is exciting to be learning and working with the latest AI models and using them to solve various problems for the Auditors.
+                                    </CardDescription>
+                                    <div className="flex items-start gap-4 mt-6">
+                                        <Avatar>
+                                            <AvatarFallback className="bg-[var(--primary)] text-[var(--foreground)]">A</AvatarFallback>
+                                        </Avatar>
+                                        <div className="space-y-1">
+                                            <p className="text-sm font-semibold text-[var(--primary)]">A********</p>
+                                            <p className="text-sm text-muted-foreground">Level 6 Data Scientist Apprentice</p>
                                         </div>
-                                    </CardHeader>
-                                </Card>
+                                    </div>
+                                </CardHeader>
+                            </Card>
 
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle>LLOYDS BANKING GROUP</CardTitle>
-                                        <CardDescription>
-                                            "Best Company, doing an apprenticeship @LLOYDS is an unforgettable experience"
-                                        </CardDescription>
-                                    </CardHeader>
-                                </Card>
-                            </div>                          
+                            <Card className="p-4">
+                                <CardHeader className="space-y-4 px-0 pt-0">
+                                    <div className="flex justify-between">
+                                        <CardTitle className="text-sm">LLOYDS BANKING GROUP</CardTitle>
+                                        <p className="text-sm">1.25k Reviews</p>
+                                    </div>
+                                    <CardDescription className="text-base">
+                                        I really love my programme. Aside from enjoying the subject matter, everyone I work with is really welcoming of the apprenticeship scheme and as such are always willing to help me. I'm also given a lot of flexibility to explore things that interest me and as a result I have never felt any 2 days to be the same and monotonous.
+                                    </CardDescription>
+                                    <div className="flex items-start gap-4 mt-6">
+                                        <Avatar>
+                                            <AvatarFallback className="bg-[var(--special)] text-[var(--foreground)]">A</AvatarFallback>
+                                        </Avatar>
+                                        <div className="space-y-1">
+                                            <p className="text-sm font-semibold text-[var(--primary)]">A*********</p>
+                                            <p className="text-sm text-muted-foreground">Level 6 Internal Auditor Apprentice</p>
+                                        </div>
+                                    </div>
+                                </CardHeader>
+                            </Card>
+                        </div>
                     </div>
+  
                 </div>
             </div>
         </div>
