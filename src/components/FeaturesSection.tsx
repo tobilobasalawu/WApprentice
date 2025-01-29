@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Image from "next/image";
 
 export default function FeaturesSection() {
     return (
@@ -154,30 +155,32 @@ export default function FeaturesSection() {
                         <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-6">
                             Discover Top Employers: Exclusive Reviews and Ratings from Apprentices
                         </h3>
-                        
-                        <div className="space-y-6">
-                            <Card>
-                                <CardHeader>
-                                    <Button className="w-10" variant={'outline'}>KPMG</Button>
-                                    <CardTitle>KPMG</CardTitle>
-                                    <CardDescription>
-                                        "Great Company, doing an apprenticeship @KPMG was the best decision of my life"
-                                    </CardDescription>
-                                    <div className="mt-4 text-sm text-gray-500">
-                                        Priya Sharma - Level 6 Audit Apprentice
-                                    </div>
-                                </CardHeader>
-                            </Card>
+                            <div className="space-y-6">
+                                <Card>
+                                    <CardHeader>
+                                        <CardTitle>KPMG</CardTitle>
+                                        <CardDescription>
+                                            "Great Company, doing an apprenticeship @KPMG was the best decision of my life"
+                                        </CardDescription>
+                                        <div className="mt-4 text-sm text-gray-500">
+                                            <Image src={''}/>
+                                            <div>
+                                                <p>Pra******</p>
+                                                <p>Level 6 Audit Apprentice</p>
+                                            </div>
+                                        </div>
+                                    </CardHeader>
+                                </Card>
 
-                            <Card>
-                                <CardHeader>
-                                    <CardTitle>LLOYDS BANKING GROUP</CardTitle>
-                                    <CardDescription>
-                                        "Best Company, doing an apprenticeship @LLOYDS is an unforgettable experience"
-                                    </CardDescription>
-                                </CardHeader>
-                            </Card>
-                        </div>
+                                <Card>
+                                    <CardHeader>
+                                        <CardTitle>LLOYDS BANKING GROUP</CardTitle>
+                                        <CardDescription>
+                                            "Best Company, doing an apprenticeship @LLOYDS is an unforgettable experience"
+                                        </CardDescription>
+                                    </CardHeader>
+                                </Card>
+                            </div>                          
                     </div>
                 </div>
             </div>
