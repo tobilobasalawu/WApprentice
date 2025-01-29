@@ -158,6 +158,7 @@ export default function FeaturesSection() {
                         <div className="space-y-6">
                             <Card>
                                 <CardHeader>
+                                    <Button className="w-10" variant={'outline'}>KPMG</Button>
                                     <CardTitle>KPMG</CardTitle>
                                     <CardDescription>
                                         "Great Company, doing an apprenticeship @KPMG was the best decision of my life"
