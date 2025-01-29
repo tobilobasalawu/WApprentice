@@ -107,7 +107,7 @@ export default function Header() {
 
       {/* Button (Hidden on Small Screens) */}
       <div className="hidden lg:block">
-        <Button type="primary" text="Join the Waitlist" />
+        <Button type="primary" text="Join the Waitlist"/>
       </div>
 
     </div>
