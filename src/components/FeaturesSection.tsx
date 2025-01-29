@@ -47,19 +47,19 @@ export default function FeaturesSection() {
                                 className="pb-8"
                             >
                             <SwiperSlide>
-                                <Card className="h-full p-6">
+                                <Card className="h-full p-6 w-[85%]">
                                     <div className="flex justify-between items-start">
                                         <div className="space-y-2">
                                             <h3 className="text-xl font-semibold text-[var(--primary)]">
                                                 Cyberspace Communication Specialist
                                             </h3>
                                             <div className="flex gap-4 text-sm">
-                                                <span className="bg-[var(--primary)] text-white px-2 py-1 rounded">Full-Time</span>
-                                                <span className="text-muted-foreground">Wolverhampton</span>
+                                                <span className="bg-[#E9EEF6] text-sm text-[-var(--primary)] px-2 py-1 rounded-full">Full-Time</span>
+                                                <span className="bg-[#E9EEF6] text-sm text-[-var(--primary)] px-2 py-1 rounded-full">Wolverhampton</span>
                                             </div>
                                         </div>
-                                        <Button variant="outline" className="border-[var(--special)] text-[var(--special)]">
-                                            Apply
+                                        <Button variant="ghost" className="border-[var(--special)] text-[var(--special)]">
+                                            <Image src={'direction.svg'} width={'30'} height={'30'}/>
                                         </Button>
                                     </div>
                                     
