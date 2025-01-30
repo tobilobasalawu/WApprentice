@@ -14,7 +14,7 @@ export default function SEO({
   title,
   description,
   keywords = "apprenticeship search, apply for apprenticeships, apprenticeship tracker, apprenticeship salary guide, CV tips for apprenticeships, apprenticeship employer reviews, career apprenticeships, wApprentice",
-  canonicalUrl,
+  canonicalUrl = 'https://wapprentice.app',
   ogImage = "/logo.svg",
   structuredData,
 }: SEOProps) {
