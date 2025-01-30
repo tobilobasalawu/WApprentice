@@ -15,8 +15,8 @@ import {
 import Button from './Button';
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+const [menuOpen] = useState(false);
+const [sidebarOpen] = useState(false);
 
   const components = [
     {
