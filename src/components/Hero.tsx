@@ -44,14 +44,15 @@ export default function Hero() {
   <div className="max-w-5xl flex-grow mx-auto text-center mt-10 mb-10 sm:mb-20">
       <div className="flex flex-wrap justify-center">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-Satoshi tracking-tight">
-          <span className="block sm:inline mr-2 text-[var(--special)]">Discover, Apply, Track </span>
-          <span className="block sm:inline mr-2">Your Dream Apprenticeship with</span>
-          <span className="block sm:inline text-[var(--special)]">Ease</span>
+          <span className="block sm:inline mr-2">Your </span>
+          <span className="block sm:inline mr-2 text-[var(--special)]">Solutions </span>
+          <span className="block sm:inline mr-2">to</span>
+          <span className="block sm:inline text-[var(--special)]"> Apprenticeships</span>
         </h2>
       </div>
 
-      <p className="paragraph-hero text-center text-sm px-2">
-        Find, track & apply for apprenticeships—fast. Get real salary insights, CV tips & employer reviews. Stay ahead with updates & exclusive career hacks.
+      <p className="paragraph-hero text-center text-sm px-2 text-[var(--primary)]">
+        Land apprenticeships: Apply, track—one click. Smart search, salary insights, CV tips. Balance studies & succeed. 🚀
       </p>
 
 
