@@ -30,19 +30,7 @@ const nextConfig: NextConfig = {
   },
   // Remove www redirects
   async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.wapprentice.app', // Catch www requests
-          },
-        ],
-        destination: 'https://wapprentice.app/:path*', // Redirect to non-www
-        permanent: true,
-      },
-    ];
+    return [];
   },
 };
 
