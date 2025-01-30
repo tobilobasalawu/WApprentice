@@ -8,7 +8,7 @@ export default function Footer(){
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
                     {/* Left Section */}
                     <div className="flex flex-col md:flex-row items-center gap-4">
-                        <span className="text-white">hello@wapprentice.com</span>
+                        <span className="text-white">hello@wapprentice.app</span>
                     <div className="hidden md:block h-4 w-px bg-border"></div>
                     <span>
                         Designed by <span className="text-white">WApprentice Team ❤</span>
