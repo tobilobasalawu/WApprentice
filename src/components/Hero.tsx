@@ -1,5 +1,4 @@
 'use client';
-import { Input } from "@/components/ui/input"
 import Button from "./Button";
 import { useState } from 'react';
 import { addDoc, collection } from 'firebase/firestore';
@@ -30,8 +29,8 @@ export default function Hero() {
       });
       setSuccess(true);
       setEmail('');
-    } catch (err) {
-      setError('Failed to submit. Please try again.');
+    } catch (error) {
+      console.error(error);
     } finally {
       setLoading(false);
     }
