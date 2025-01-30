@@ -44,10 +44,11 @@ export default function Hero() {
   <div className="max-w-5xl flex-grow mx-auto text-center mt-10 mb-10 sm:mb-20">
       <div className="flex flex-wrap justify-center">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-Satoshi tracking-tight">
-          <span className="block sm:inline mr-2">Your </span>
-          <span className="block sm:inline mr-2 text-[var(--special)]">Solutions </span>
-          <span className="block sm:inline mr-2">to</span>
-          <span className="block sm:inline text-[var(--special)]"> Apprenticeships</span>
+          <span className="block sm:inline mr-4">Your</span>
+          <span className="block sm:inline mr-4 text-[var(--special)]">Solutions
+            <span className="text-[var(--primary)] ml-3">to</span>
+          </span>
+          <span className="block sm:inline text-[var(--special)]">Apprenticeships</span>
         </h2>
       </div>
 
