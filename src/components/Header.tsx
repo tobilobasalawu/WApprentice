@@ -1,9 +1,8 @@
 'use client';
 import Image from 'next/image';
-import * as React from 'react';
 import { useState } from 'react';
-
 import { cn } from '@/lib/utils';
+import React from 'react';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,11 +11,20 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog'; // Import Dialog components
 import Button from './Button';
 
 export default function Header() {
-const [menuOpen] = useState(false);
-const [sidebarOpen] = useState(false);
+  const [isComingSoonOpen, setIsComingSoonOpen] = useState(false); // State for dialog
+
+  const handleNavigationClick = () => {
+    setIsComingSoonOpen(true); // Open the dialog
+  };
 
   const components = [
     {
@@ -62,7 +70,7 @@ const [sidebarOpen] = useState(false);
         />
       </div>
 
-      {/* Removed NavigationMenu for smaller screens */}
+      {/* Navigation Menu */}
       <div className="hidden lg:block">
         <NavigationMenu className="flex flex-col items-center mt-4 lg:flex-row lg:space-x-8 lg:mt-0">
           <NavigationMenuList className="flex flex-col items-center lg:flex-row w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4">
@@ -71,7 +79,11 @@ const [sidebarOpen] = useState(false);
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-4 sm:w-[300px] lg:w-[500px] lg:grid-cols-1 xl:w-[600px]">
                   {components2.map((component) => (
-                    <ListItem key={component.title} title={component.title}>
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      onClick={handleNavigationClick} // Add click handler
+                    >
                       {component.description}
                     </ListItem>
                   ))}
@@ -79,13 +91,13 @@ const [sidebarOpen] = useState(false);
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
+            <NavigationMenuItem onClick={handleNavigationClick}>
               Ratings & Reviews
             </NavigationMenuItem>
-            <NavigationMenuItem>
+            <NavigationMenuItem onClick={handleNavigationClick}>
               Salary Insights
             </NavigationMenuItem>
-            <NavigationMenuItem>
+            <NavigationMenuItem onClick={handleNavigationClick}>
               Events & Networking
             </NavigationMenuItem>
 
@@ -94,7 +106,11 @@ const [sidebarOpen] = useState(false);
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-4 sm:w-[300px] lg:w-[500px] lg:grid-cols-2 xl:w-[600px]">
                   {components.map((component) => (
-                    <ListItem key={component.title} title={component.title}>
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      onClick={handleNavigationClick} // Add click handler
+                    >
                       {component.description}
                     </ListItem>
                   ))}
@@ -107,9 +123,21 @@ const [sidebarOpen] = useState(false);
 
       {/* Button (Hidden on Small Screens) */}
       <div className="hidden lg:block">
-        <Button type="primary" text="Join the Waitlist"/>
+        <Button type="primary" text="Join the Waitlist" />
       </div>
 
+      {/* Coming Soon Dialog */}
+      <Dialog open={isComingSoonOpen} onOpenChange={setIsComingSoonOpen}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle className="text-center">Coming Soon!</DialogTitle>
+          </DialogHeader>
+          <div className="text-center py-4">
+            <p>This feature is currently under development.</p>
+            <p>Stay tuned for updates!</p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
@@ -117,7 +145,7 @@ const [sidebarOpen] = useState(false);
 const ListItem = React.forwardRef<
   React.ElementRef<'a'>,
   React.ComponentPropsWithoutRef<'a'>
->(({ className, title, children, ...props }, ref) => {
+>(({ className, title, children, onClick, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -127,6 +155,7 @@ const ListItem = React.forwardRef<
             'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
             className
           )}
+          onClick={onClick} // Pass click handler
           {...props}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
