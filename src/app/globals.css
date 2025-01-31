@@ -199,3 +199,8 @@ h2 {
   background: var(--special) !important;
   opacity: 1 !important;
 }
+
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  max-width: 100vw; /* Ensure the body doesn't exceed viewport width */
+}
