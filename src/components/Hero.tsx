@@ -53,7 +53,7 @@ export default function Hero() {
       </div>
 
       <p className="paragraph-hero text-center text-sm px-2 text-[var(--primary)]">
-        Land apprenticeships: Apply, track—one click. Smart search, salary insights, CV tips. Balance studies & succeed. 🚀
+        Land apprenticeships: Apply, track—one click. Smart search, salary insights, CV tips. Balance studies & succeed 🚀
       </p>
 
 
@@ -63,7 +63,7 @@ export default function Hero() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter you email address"
+            placeholder="Enter your email address"
             className="w-full sm:w-1/2 px-3 py-3 rounded-full mr-5 mb-3 border border-gray-300 focus:border-black focus:outline-none"
             required
           />
