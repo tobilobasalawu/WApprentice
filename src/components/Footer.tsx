@@ -17,7 +17,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
-            <Link href="linkedin.com">
+            <Link href="/">
               <Image
                 src="linkedin.svg"
                 width={34}
@@ -26,7 +26,7 @@ export default function Footer() {
                 alt="LinkedIn"
               />
             </Link>
-            <Link href="instagram.com">
+            <Link href="/">
               <Image
                 src="instagram.svg"
                 width={34}
@@ -35,7 +35,7 @@ export default function Footer() {
                 alt="Instagram"
               />
             </Link>
-            <Link href="tiktok.com">
+            <Link href="/">
               <Image
                 src="tiktok.svg"
                 width={34}
