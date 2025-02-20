@@ -80,10 +80,7 @@ export function JobCard({
               {postedAgo} • {applicants} Applicants
             </p>
           </div>
-          <Button 
-            variant="secondary" 
-            className="bg-blue-50 hover:bg-blue-100 text-blue-600"
-          >
+          <Button>
             Apply Now
           </Button>
         </div>
