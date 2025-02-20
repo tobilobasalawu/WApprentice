@@ -40,14 +40,14 @@ const HomePage = async () => {
 							<span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
 							<span className="absolute inset-x-0 bottom-0 h-full w-full bg-gradient-to-tr from-primary/20 blur-md"></span>
 							<span className="z-10 flex items-center justify-center gap-1 py-0.5 text-neutral-100 text-sm">
-								✨ Introduction Writora AI
+								✨ Introduction WApprentice
 								<ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
 							</span>
 						</button>
 						<h1 className="!leading-[1.15] w-full text-balance py-6 text-center font-heading font-medium text-5xl text-foreground tracking-normal sm:text-6xl md:text-7xl lg:text-8xl">
-							AI-Powered Blogs With{" "}
+								Your Solutions to{" "}
 							<span className="inline-bloc bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
-								Media
+								Apprenticeships
 							</span>
 						</h1>
 						<p className="mb-12 text-balance text-lg text-muted-foreground tracking-tight md:text-xl">

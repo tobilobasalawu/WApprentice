@@ -20,6 +20,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import AnimationContainer from "../global/animation-container";
 import MaxWidthWrapper from "../global/max-width-wrapper";
+import Image from "next/image";
 
 const Navbar = () => {
 	const { user } = useClerk();
@@ -52,11 +53,12 @@ const Navbar = () => {
 			<AnimationContainer reverse delay={0.1} className="size-full">
 				<MaxWidthWrapper className="flex items-center justify-between">
 					<div className="flex items-center space-x-12">
-						<Link href="/">
-							<span className="!leading-none font-bold font-heading text-lg">
-								WApprentice
-							</span>
-						</Link>
+						<Link href="/" className="flex items-center">
+              <span className="text-xl font-semibold">
+                <span className="text-white">W</span>
+                <span className="bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">Apprentice</span>
+              </span>
+            </Link>
 					</div>
 
 					<div className="hidden items-center lg:flex">
