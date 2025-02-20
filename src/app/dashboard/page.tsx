@@ -13,7 +13,7 @@ export default function DashboardPage() {
   const [salaryRange, setSalaryRange] = useState([1000, 25000]);
 
   return (
-    <main className="min-h-screen bg-background p-6">
+    <main className="min-h-screen bg- bg-gradient-to-t from-background p-6">
       <SearchHeader />
       
       <div className="mt-8 grid grid-cols-12 gap-6">
@@ -45,7 +45,103 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <JobCard 
+              company="Pixelz Studio"
+              position="UI/UX Designer"
+              location="Yogyakarta"
+              type="Fulltime"
+              workMode="Hybrid"
+              experience="2-4 Years"
+              salary={1000}
+              applicants={140}
+              postedAgo="2 days ago"
+              logo=""
+            />
+            <JobCard 
+              company="Traveloka"
+              position="Product Designer"
+              location="Jakarta, Indonesia"
+              type="Fulltime"
+              workMode="Onsite"
+              experience="2-4 Years"
+              salary={1500}
+              applicants={140}
+              postedAgo="an hour ago"
+              logo=""
+            />
+            <JobCard 
+              company="Pixelz Studio"
+              position="UI/UX Designer"
+              location="Yogyakarta"
+              type="Fulltime"
+              workMode="Hybrid"
+              experience="2-4 Years"
+              salary={1000}
+              applicants={140}
+              postedAgo="2 days ago"
+              logo=""
+            />
+            <JobCard 
+              company="Traveloka"
+              position="Product Designer"
+              location="Jakarta, Indonesia"
+              type="Fulltime"
+              workMode="Onsite"
+              experience="2-4 Years"
+              salary={1500}
+              applicants={140}
+              postedAgo="an hour ago"
+              logo=""
+            />
+            <JobCard 
+              company="Pixelz Studio"
+              position="UI/UX Designer"
+              location="Yogyakarta"
+              type="Fulltime"
+              workMode="Hybrid"
+              experience="2-4 Years"
+              salary={1000}
+              applicants={140}
+              postedAgo="2 days ago"
+              logo=""
+            />
+            <JobCard 
+              company="Traveloka"
+              position="Product Designer"
+              location="Jakarta, Indonesia"
+              type="Fulltime"
+              workMode="Onsite"
+              experience="2-4 Years"
+              salary={1500}
+              applicants={140}
+              postedAgo="an hour ago"
+              logo=""
+            />
+            <JobCard 
+              company="Pixelz Studio"
+              position="UI/UX Designer"
+              location="Yogyakarta"
+              type="Fulltime"
+              workMode="Hybrid"
+              experience="2-4 Years"
+              salary={1000}
+              applicants={140}
+              postedAgo="2 days ago"
+              logo=""
+            />
+            <JobCard 
+              company="Traveloka"
+              position="Product Designer"
+              location="Jakarta, Indonesia"
+              type="Fulltime"
+              workMode="Onsite"
+              experience="2-4 Years"
+              salary={1500}
+              applicants={140}
+              postedAgo="an hour ago"
+              logo=""
+            />
             <JobCard 
               company="Pixelz Studio"
               position="UI/UX Designer"
