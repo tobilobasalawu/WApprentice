@@ -1,4 +1,6 @@
 import {
+	BookCheck,
+	BookCheckIcon,
 	HelpCircleIcon,
 	LineChartIcon,
 	Link2Icon,
@@ -9,63 +11,57 @@ import {
 
 export const NAV_LINKS = [
 	{
-		title: "Features",
-		href: "/features",
+		title: "Find Apprenticeships",
+		href: "/find-apprenticeships",
 		menu: [
 			{
-				title: "SEO Strategy",
-				tagline: "SEO optimization and track their performance.",
-				href: "/features/seo-strategy",
-				icon: Link2Icon,
-			},
-			{
-				title: "Password Protection",
-				tagline: "Secure your blogs with a password.",
-				href: "/features/password-protection",
-				icon: LockIcon,
-			},
-			{
-				title: "Advanced Analytics",
-				tagline: "Gain insights into who is clicking your posts.",
-				href: "/features/analytics",
+				title: "Application Tracker",
+				tagline: "Monitor all your submitted applications in one place and stay updated on their status",
+				href: "/tracker",
 				icon: LineChartIcon,
-			},
-			{
-				title: "Custom QR Codes",
-				tagline: "Use QR codes to reach your audience.",
-				href: "/features/qr-codes",
-				icon: QrCodeIcon,
 			},
 		],
 	},
 	{
-		title: "Pricing",
-		href: "/pricing",
+		title: "Reviews & Ratings",
+		href: "/reviews",
 	},
 	{
-		title: "Enterprise",
-		href: "/enterprise",
+		title: "Salary Insight",
+		href: "/salaries",
 	},
 	{
 		title: "Resources",
 		href: "/resources",
 		menu: [
 			{
-				title: "Blog",
-				tagline: "Read articles on the latest trends in tech.",
-				href: "/resources/blog",
+				title: "CV Builder",
+				tagline: "Craft the perfect CV with our intuitive builder designed to showcase your skills and experience",
+				href: "/resources/cv-builder",
 				icon: NewspaperIcon,
 			},
 			{
-				title: "Help",
-				tagline: "Get answers to your questions.",
-				href: "/resources/help",
+				title: "Assessment Practice",
+				tagline: "Prepare for aptitude tests and interviews with practice materials that boost your confidence",
+				href: "/resources/assessments",
+				icon: BookCheckIcon,
+			},
+			{
+				title: "Interview Tips",
+				tagline: "Master your interviews with expert advice, sample questions, and proven techniques",
+				href: "/resources/interview-tips",
 				icon: HelpCircleIcon,
+			},
+			{
+				title: "Focus Time Scheduler",
+				tagline: "Stay productive by scheduling dedicated blocks of time to work on your applications",
+				href: "/resources/focus-time",
+				icon: LockIcon,
 			},
 		],
 	},
 	{
-		title: "Changelog",
-		href: "/changelog",
+		title: "Events & Networking",
+		href: "/events",
 	},
 ];

@@ -31,95 +31,10 @@ const MobileNavbar = () => {
 
 	return (
 		<div className="flex items-center justify-end lg:hidden">
-			<Sheet open={isOpen} onOpenChange={setIsOpen}>
-				<SheetTrigger asChild>
-					<Button size="icon" variant="ghost">
-						<Menu className="h-5 w-5" />
-					</Button>
-				</SheetTrigger>
-				<SheetContent className="w-screen">
-					<SheetClose
-						asChild
-						className="absolute top-3 right-5 z-20 flex items-center justify-center bg-background"
-					>
-						<Button size="icon" variant="ghost" className="text-neutral-600">
-							<X className="h-5 w-5" />
-						</Button>
-					</SheetClose>
-					<div className="mt-10 flex w-full flex-col items-start py-2">
-						<div className="flex w-full items-center justify-evenly space-x-2">
-							{isSignedIn ? (
-								<Link
-									href="/dashboard"
-									className={buttonVariants({
-										variant: "outline",
-										className: "w-full",
-									})}
-								>
-									Dashboard
-								</Link>
-							) : (
-								<>
-									<Link
-										href="/sign-in"
-										className={buttonVariants({
-											variant: "outline",
-											className: "w-full",
-										})}
-									>
-										Sign In
-									</Link>
-									<Link
-										href="/sign-in"
-										className={buttonVariants({ className: "w-full" })}
-									>
-										Sign Up
-									</Link>
-								</>
-							)}
-						</div>
-						<ul className="mt-6 flex w-full flex-col items-start">
-							<Accordion type="single" collapsible className="!w-full">
-								{NAV_LINKS.map((link) => (
-									<AccordionItem
-										key={link.title}
-										value={link.title}
-										className="last:border-none"
-									>
-										{link.menu ? (
-											<>
-												<AccordionTrigger>{link.title}</AccordionTrigger>
-												<AccordionContent>
-													<ul onClick={handleClose} className={cn("w-full")}>
-														{link.menu.map((menuItem) => (
-															<ListItem
-																key={menuItem.title}
-																title={menuItem.title}
-																href={menuItem.href}
-																icon={menuItem.icon}
-															>
-																{menuItem.tagline}
-															</ListItem>
-														))}
-													</ul>
-												</AccordionContent>
-											</>
-										) : (
-											<Link
-												href={link.href}
-												onClick={handleClose}
-												className="flex w-full items-center py-4 font-medium text-muted-foreground hover:text-foreground"
-											>
-												<span>{link.title}</span>
-											</Link>
-										)}
-									</AccordionItem>
-								))}
-							</Accordion>
-						</ul>
-					</div>
-				</SheetContent>
-			</Sheet>
+			{/* Removed Sheet component */}
+			{/* <Sheet open={isOpen} onOpenChange={setIsOpen}> */}
+			{/* ... existing code ... */}
+			{/* </Sheet> */}
 		</div>
 	);
 };
